@@ -24,12 +24,20 @@ public:
 	 * @param digit4Pin
 	 */
 	ShiftRegister(char dsPin, char shcpPin, char stcpPin, char digit1Pin, char digit2Pin, char digit3Pin, char digit4Pin);
-	ShiftRegister
+	ShiftRegister(char dsPim, char shcpPin, char stcpPin, char digitPin);
 	void setBrightness(char level);
-	void setDigit(char index, char digit, boolean dp);
+	void setDigit(char value, char digit, boolean dp);
 
 private:
+	char dsPin;
+	char shcpPin;
+	char stcpPin;
+	char digit1Pin;
+	char digit2Pin;
+	char digit3Pin;
+	char digit4Pin;
 
+	char brightness;
 };
 
 
